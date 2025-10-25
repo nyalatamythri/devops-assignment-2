@@ -84,8 +84,8 @@ kubectl get deployment ticket-booking-deployment -o wide
 
 ## What to replace before pushing
 1. Update `k8s/deployment.yaml` image field to your Docker Hub image (or keep as imagePullSecrets if private):
-   `image: laxmisharany6/ticket-booking:TAG`
-2. In `Jenkinsfile`, ensure the credential IDs match your Jenkins credentials and that `laxmisharany6/ticket-booking` env var is set in the Jenkins job (or modify the Jenkinsfile accordingly).
+   `image: nyalatamythri/ticket-booking:TAG`
+2. In `Jenkinsfile`, ensure the credential IDs match your Jenkins credentials and that `nyalatamythri/ticket-booking` env var is set in the Jenkins job (or modify the Jenkinsfile accordingly).
 3. Add real screenshots of pipeline and deployments to this README for submission (place in `/docs/screenshots`).
 
 ## Files included
