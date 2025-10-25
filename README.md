@@ -43,9 +43,9 @@ curl -X POST http://localhost:5000/book -H "Content-Type: application/json" -d '
 ## Docker Hub integration
 Tag and push:
 ```
-docker tag ticket-booking:local laxmisharany6/ticket-booking:latest
+docker tag ticket-booking:local nyalatamythri/ticket-booking:latest
 docker login --username=YOUR_USER
-docker push laxmisharany6/ticket-booking:latest
+docker push nyalatamythri/ticket-booking:latest
 ```
 
 > **Jenkins pipeline** (see `Jenkinsfile`) assumes credentials stored in Jenkins:
