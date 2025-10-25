@@ -107,6 +107,6 @@ kubectl get deployment ticket-booking-deployment -o wide
 
 ----
 Good luck! If you'd like, I can also:
-- Replace `laxmisharany6/ticket-booking` placeholders with your Docker Hub repo name.
+- Replace `nyalatamythri/ticket-booking` placeholders with your Docker Hub repo name.
 - Generate a GitHub Actions pipeline instead of Jenkins.
 - Create example `git` commands for creating releases or CI webhooks.
