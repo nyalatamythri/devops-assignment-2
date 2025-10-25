@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    IMAGE = "${laxmisharany6/ticket-booking}:${GIT_COMMIT}"
+    IMAGE = "${nyalatamythri/ticket-booking}:${GIT_COMMIT}"
     DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds') // create in Jenkins
     KUBECONFIG_CREDENTIALS = credentials('kubeconfig') // create in Jenkins (kubeconfig as secret file)
   }
