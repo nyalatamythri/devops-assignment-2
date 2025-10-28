@@ -43,9 +43,9 @@ curl -X POST http://localhost:5000/book -H "Content-Type: application/json" -d '
 ## Docker Hub integration
 Tag and push:
 ```
-docker tag ticket-booking:local laxmisharany6/ticket-booking:latest
+docker tag ticket-booking:local nyalatamythri/ticket-booking:latest
 docker login --username=YOUR_USER
-docker push laxmisharany6/ticket-booking:latest
+docker push nyalatamythri/ticket-booking:latest
 ```
 
 > **Jenkins pipeline** (see `Jenkinsfile`) assumes credentials stored in Jenkins:
@@ -84,8 +84,8 @@ kubectl get deployment ticket-booking-deployment -o wide
 
 ## What to replace before pushing
 1. Update `k8s/deployment.yaml` image field to your Docker Hub image (or keep as imagePullSecrets if private):
-   `image: laxmisharany6/ticket-booking:TAG`
-2. In `Jenkinsfile`, ensure the credential IDs match your Jenkins credentials and that `laxmisharany6/ticket-booking` env var is set in the Jenkins job (or modify the Jenkinsfile accordingly).
+   `image: nyalatamythri/ticket-booking:TAG`
+2. In `Jenkinsfile`, ensure the credential IDs match your Jenkins credentials and that `nyalatamythri/ticket-booking` env var is set in the Jenkins job (or modify the Jenkinsfile accordingly).
 3. Add real screenshots of pipeline and deployments to this README for submission (place in `/docs/screenshots`).
 
 ## Files included
@@ -107,6 +107,6 @@ kubectl get deployment ticket-booking-deployment -o wide
 
 ----
 Good luck! If you'd like, I can also:
-- Replace `laxmisharany6/ticket-booking` placeholders with your Docker Hub repo name.
+- Replace `nyalatamythri/ticket-booking` placeholders with your Docker Hub repo name.
 - Generate a GitHub Actions pipeline instead of Jenkins.
 - Create example `git` commands for creating releases or CI webhooks.
